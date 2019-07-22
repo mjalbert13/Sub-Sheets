@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
     <div id="home">
         <div class="container">
           <div class="row">
             <div class="col-8 offset-2">
-              <h1>{{msg}}</h1>
+              <h1>Sub Sheets</h1>
               <h2>This is our Home Page!</h2>
               <form class="clearfix mb-4" action="POST">
                 <div class="form-group">
@@ -26,12 +28,12 @@
               </form>
               <h3>Examples:</h3>
               <ul id="example-list" class="list-group">
-                {{#each examples}}
+            
                 <li data-id="{{this.id}}" class="list-group-item">
-                  <a href="example/{{this.id}}">{{this.text}}</a>
+                  <a href="example/{{this.id}}"></a>
                   <button class="btn btn-danger float-right delete">ｘ</button>
                 </li>
-                {{/each}}
+             
               </ul>
             </div>
           </div>
